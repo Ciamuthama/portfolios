@@ -2,6 +2,8 @@ import Image from 'next/image'
 import React from 'react'
 import { AnimatedGroup } from '../motion-primitives/animated-group'
 import About from './aboutme'
+import Skills from './skills'
+import Experiences from './exp'
 
 export default function Personal() {
   return (
@@ -37,11 +39,13 @@ export default function Personal() {
         },
       }}>
 
-      <div className='relative w-[20rem] h-[20rem] mx-auto'>
+      <div className='relative w-[28rem] h-[28rem] mx-auto mb-5'>
         <Image fill alt="peter muthama's photo" src="/profile-pic.png"/>
         </div>
-      <About/>
       </AnimatedGroup>
+      <About/>
+      <Skills/>
+      <Experiences/>
     </div>
   )
 }

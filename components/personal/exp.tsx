@@ -1,8 +1,8 @@
 import React from "react";
-import { TextEffect } from "../motion-primitives/text-effect";
-import { Indie_Flower } from "next/font/google";
+import { InView } from "../motion-primitives/in-view";
 import Link from "next/link";
-import { BiLinkAlt } from "react-icons/bi";
+import { Indie_Flower } from "next/font/google";
+
 
 const indieFlower = Indie_Flower({
   weight: "400",
@@ -11,16 +11,24 @@ const indieFlower = Indie_Flower({
 
 export default function Experiences() {
   return (
-    <div className="mt-10">
-      <h4
-        className="text-center text-4xl animate-fade-up animate-delay-[1400ms]"
-      >
+    <div className="mt-[15rem] snap-center snap-mandatory">
+       <InView
+                variants={{
+                  hidden: { opacity: 0, y: 100, filter: 'blur(4px)' },
+                  visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
+                }}
+                viewOptions={{ margin: '0px 0px -50px 0px' }}
+                transition={{ duration: 0.3, ease: 'easeInOut' }}
+              >
+
+            
+      <h4 className="text-center text-4xl animate-fade-up animate-delay-[1400ms]">
         Experiences
       </h4>
       <div>
         <div className="w-[50%] mx-auto animate-fade-up animate-delay-[1400ms]">
           <h4 className="font-semibold uppercase">FrontEnd Developer</h4>
-          <div className="flex gap-3">
+          <div className="flex gap-3 mt-2">
             <h4 className={`${indieFlower.className} !font-semibold`}>
               JumboStar Solutions | Nakuru,Kenya
             </h4>
@@ -28,9 +36,9 @@ export default function Experiences() {
               Jan 2024 - Present
             </h4>
           </div>
-          <div className="flex">
-            <span className="mt-3.5">🍥</span>
-            <p className={`mt-4 ${indieFlower.className}`}>
+          <div className="flex ">
+            <span className="mt-3.5 text-base">🍥</span>
+            <p className={`mt-4 ${indieFlower.className} text-base`}>
               At JumboStar Solutions, I work as a Frontend Deloper building ERP
               systems for over 150 SACCOs across Kenya. My role involves
               designing and developing responsive, user-friendly web apps and
@@ -41,7 +49,7 @@ export default function Experiences() {
 
         <div className="w-[50%] mx-auto mt-5 animate-fade-up animate-delay-[1400ms]">
           <h4 className="font-semibold uppercase">Software Engineer</h4>
-          <div className="flex gap-3">
+          <div className="flex gap-3 mt-2">
             <h4 className={`${indieFlower.className} !font-semibold`}>
               Freelancer
             </h4>
@@ -49,23 +57,22 @@ export default function Experiences() {
               April 2024 - Present
             </h4>
           </div>
-          <div className="flex ">
-            <span className="mt-3.5">🍥</span>
-            <p className={`mt-4 ${indieFlower.className}`}>
-              Worked with small businesses and community groups to build custom
-              web and mobile solutions. Delivered a CRM and ERP systems, set up
-              online presence through websites and Google Business profiles, and
-              helped streamline user experiences through responsive design.
-            </p>
+          <div>
+            <Link href="/agency/#projects" className="flex ">
+              <span className="mt-3.5 text-base">🍥</span>
+              <p className={`mt-4 ${indieFlower.className} text-base`}>
+                Worked with small businesses and community groups to build
+                custom web and mobile solutions. Delivered a CRM and ERP
+                systems, set up online presence through websites and Google
+                Business profiles, and helped streamline user experiences
+                through responsive design.
+                
+              </p>
+            </Link>
           </div>
-          <Link
-            className="font-semibold uppercase flex mt-3"
-            href="/agency/#projects"
-          >
-            <BiLinkAlt className="text-inherit mr-2" />Showcase
-          </Link>
         </div>
       </div>
+      </InView>
     </div>
   );
 }

@@ -4,11 +4,12 @@ import { AnimatedGroup } from '../motion-primitives/animated-group'
 import About from './aboutme'
 import Skills from './skills'
 import Experiences from './exp'
+import Projects from './projects'
 
 export default function Personal() {
   return (
     <div className='pt-5 text-[#004030] font-sans'>
-      <AnimatedGroup variants={{
+      <AnimatedGroup className='mt-20' variants={{
         container: {
           visible: {
             transition: {
@@ -44,8 +45,9 @@ export default function Personal() {
         </div>
       </AnimatedGroup>
       <About/>
-      <Skills/>
       <Experiences/>
+      <Skills/>
+      <Projects/>
     </div>
   )
 }

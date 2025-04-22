@@ -1,103 +1,141 @@
 import Image from "next/image";
+import Link from "next/link";
+import { TextLoop } from "../../components/motion-primitives/text-loop";
+import { TextRoll } from "../../components/motion-primitives/text-roll";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <div className="grid lg:grid-cols-2 max-sm:grid-rows-2  items-center justify-items-center h-screen font-[family-name:var(--font-geist-sans)]">
+      <div className="bg-[#e1c6b5] lg:min-h-screen w-full h-full flex items-center justify-center relative">
+        <Link className=" text-[#004030]" href="/personal">
+          <div className="relative w-20 h-20 mx-auto">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/profile-pic.png"
+              alt="personal portfolio"
+              className=" !relative shadow-xl rounded-full"
+              fill
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          </div>
+          <div className="inline-flex whitespace-pre-wrap text-sm">
+            Dive into my{" "}
+            <TextLoop
+              className="overflow-y-clip"
+              transition={{
+                type: "spring",
+                stiffness: 900,
+                damping: 80,
+                mass: 10,
+              }}
+              variants={{
+                initial: {
+                  y: 20,
+                  rotateX: 90,
+                  opacity: 0,
+                  filter: "blur(4px)",
+                },
+                animate: {
+                  y: 0,
+                  rotateX: 0,
+                  opacity: 1,
+                  filter: "blur(0px)",
+                },
+                exit: {
+                  y: -20,
+                  rotateX: -90,
+                  opacity: 0,
+                  filter: "blur(4px)",
+                },
+              }}
+            >
+              <span>journey!</span>
+              <span>ideas!</span>
+              <span>creations!</span>
+            </TextLoop>
+          </div>
+        </Link>
+        <div className="absolute top-2 right-2">
+          <TextRoll
+          
+            variants={{
+              enter: {
+                initial: { rotateX: 0, filter: "blur(0px)" },
+                animate: { rotateX: 90, filter: "blur(2px)" },
+              },
+              exit: {
+                initial: { rotateX: 90, filter: "blur(2px)" },
+                animate: { rotateX: 0, filter: "blur(0px)" },
+              },
+            }}
+            className=" text-[#004030] font-medium"
           >
-            Read our docs
-          </a>
+            Personal
+          </TextRoll>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="bg-[#004030] lg:min-h-screen w-full h-full flex items-center justify-center relative">
+        <Link className="text-xl text-[#e1c6b5]" href="/agency">
+          <div className="relative w-20 h-20 mx-auto">
+            <Image
+              src="/ciado.png"
+              alt="personal portfolio"
+              className=" !relative shadow-lg rounded-full"
+              fill
+            />
+          </div>
+          <div className="inline-flex whitespace-pre-wrap text-sm !font-light">
+            See how we bring visions to life for{" "}
+            <TextLoop
+              className="overflow-y-clip"
+              transition={{
+                type: "spring",
+                stiffness: 900,
+                damping: 80,
+                mass: 10,
+              }}
+              variants={{
+                initial: {
+                  y: 20,
+                  rotateX: 90,
+                  opacity: 0,
+                  filter: "blur(4px)",
+                },
+                animate: {
+                  y: 0,
+                  rotateX: 0,
+                  opacity: 1,
+                  filter: "blur(0px)",
+                },
+                exit: {
+                  y: -20,
+                  rotateX: -90,
+                  opacity: 0,
+                  filter: "blur(4px)",
+                },
+              }}
+            >
+              <span>brands!</span>
+              <span>businesses!</span>
+            </TextLoop>
+          </div>
+        </Link>
+        <div className="absolute top-2 left-2 text-[#e1c6b5] font-medium">
+          <TextRoll
+            variants={{
+              enter: {
+                initial: { rotateX: 0, filter: "blur(0px)" },
+                animate: { rotateX: 90, filter: "blur(2px)" },
+              },
+              exit: {
+                initial: { rotateX: 90, filter: "blur(2px)" },
+                animate: { rotateX: 0, filter: "blur(0px)" },
+              },
+            }}
+            className="text-[#e1c6b5] !font-normal"
+          >
+            Agency
+          </TextRoll>
+        </div>
+      </div>
     </div>
   );
 }

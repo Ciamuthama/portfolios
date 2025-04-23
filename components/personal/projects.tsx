@@ -13,6 +13,7 @@ import {
 import { GitBranch, Globe, PlusIcon } from "lucide-react";
 import { Indie_Flower } from "next/font/google";
 import Link from "next/link";
+import { InView } from "../motion-primitives/in-view";
 
 
 const indieFlower = Indie_Flower({
@@ -23,9 +24,18 @@ const indieFlower = Indie_Flower({
 export default function Projects() {
   return (
     <div className="mt-[7rem] mx-auto flex flex-col pb-5">
-      <h4 className="text-center text-4xl">Projects</h4>
-<div className="flex lg:flex-row flex-col justify-center items-center gap-12">
-      <div className="mt-5 lg:mx-0 mx-5">
+         <InView
+              variants={{
+                hidden: { opacity: 0, y: 100, filter: "blur(4px)" },
+                visible: { opacity: 1, y: 0, filter: "blur(0px)" },
+              }}
+              viewOptions={{ margin: "0px 0px -50px 0px" }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
+
+      <h4 className="text-center lg:text-4xl md:text-3xl text-2xl">Projects</h4>
+<div className="flex lg:flex-row flex-col justify-center items-center gap-12 ">
+      <div className="mt-5 lg:mx-0 mx-5 ">
         <MorphingDialog
           transition={{
             type: "spring",
@@ -173,6 +183,7 @@ export default function Projects() {
           </MorphingDialogContainer>
         </MorphingDialog>
       </div></div>
+      </InView>
     </div>
   );
 }

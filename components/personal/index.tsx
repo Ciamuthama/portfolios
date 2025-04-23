@@ -5,10 +5,11 @@ import About from './aboutme'
 import Skills from './skills'
 import Experiences from './exp'
 import Projects from './projects'
+import Footer from './footer'
 
 export default function Personal() {
   return (
-    <div className='pt-5 text-[#004030] font-sans'>
+    <div className='pt-5 text-[#004030] font-sans' id='/'>
       <AnimatedGroup className='mt-20' variants={{
         container: {
           visible: {
@@ -40,7 +41,7 @@ export default function Personal() {
         },
       }}>
 
-      <div className='relative w-[28rem] h-[28rem] mx-auto mb-5'>
+      <div className='relative lg:w-[28rem] lg:h-[28rem] w-[20rem] h-[20rem] mx-auto mb-5 shadow rounded-full'>
         <Image fill alt="peter muthama's photo" src="/profile-pic.png"/>
         </div>
       </AnimatedGroup>
@@ -48,6 +49,7 @@ export default function Personal() {
       <Experiences/>
       <Skills/>
       <Projects/>
+      <Footer/>
     </div>
   )
 }

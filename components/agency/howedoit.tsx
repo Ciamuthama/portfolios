@@ -17,11 +17,10 @@ import {
 } from "react-icons/si";
 import { InfiniteSlider } from "../motion-primitives/infinite-slider";
 import { InView } from "../motion-primitives/in-view";
-import { ProgressiveBlur } from "../motion-primitives/progressive-blur";
 
-export default function Skills() {
+export default function Howedoit() {
   return (
-    <div className="lg:mt-[10rem] mt-[7rem] lg:w-1/2 md:w-[70%] lg:mx-auto md:mx-auto mx-5 snap-center snap-mandatory overflow-hidden  ">
+    <div className="lg:mt-[10rem] mt-[7rem] lg:w-1/2 md:w-[70%] lg:mx-auto md:mx-auto mx-5 snap-center snap-mandatory">
       <InView
         variants={{
           hidden: { opacity: 0, y: 100, filter: "blur(4px)" },
@@ -29,13 +28,12 @@ export default function Skills() {
         }}
         viewOptions={{ margin: "0px 0px -50px 0px" }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        
       >
         <h4 className="text-center lg:text-4xl md:text-3xl text-2xl">Tech Stack</h4>
         <InfiniteSlider
           speedOnHover={20}
           gap={30}
-          className="mt-10 animate-fade-up animate-delay-[1400ms] relative"
+          className="mt-10 animate-fade-up animate-delay-[1400ms]"
           speed={50}
         >
           <SiTypescript  className="text-inherit lg:size-[70] md:size-[60] size-[50]" />
@@ -57,15 +55,6 @@ export default function Skills() {
           <SiAdobephotoshop   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
           <SiAdobeillustrator   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
         </InfiniteSlider>
-        <ProgressiveBlur
-        className='pointer-events-none absolute top-0 -left-10 h-full w-[200px]'
-        direction='left'
-        
-      />
-      <ProgressiveBlur
-        className='pointer-events-none absolute top-0 -right-10 h-full w-[200px]'
-        direction='right'
-      />
       </InView>
     </div>
   );

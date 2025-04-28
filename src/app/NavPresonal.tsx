@@ -12,7 +12,7 @@ export default function NavPresonal() {
         href="#/"
         className="uppercase font-semibold bg-[#e1c6b5]  p-1 rounded-full relative w-8 h-8"
       >
-        <Image src="/profile-pic.png" fill alt="go back to top" />
+        <Image src="/profile-pic.png" fill alt="CM" />
       </Link>
       <ul className="flex gap-6">
         <li>

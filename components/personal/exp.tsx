@@ -27,7 +27,7 @@ export default function Experiences() {
       </h4>
       <div>
         <div className="lg:w-[50%] lg:mx-auto mx-5 animate-fade-up animate-delay-[1400ms]">
-          <h4 className="font-semibold uppercase lg:text-base md-text-base text-[14px]">FrontEnd Developer</h4>
+          <h4 className="font-semibold uppercase lg:text-base md:text-base text-[14px]">FrontEnd Developer</h4>
           <div className="flex gap-3 mt-2 justify-between">
             <h4 className={`${indieFlower.className} !font-semibold lg:text-base md:text-base text-[13px]`}>
               JumboStar Solutions | Nakuru,Kenya
@@ -48,7 +48,7 @@ export default function Experiences() {
         </div>
 
         <div className="lg:w-[50%] lg:mx-auto mx-5 animate-fade-up animate-delay-[1400ms] mt-5">
-          <h4 className="font-semibold uppercase lg:text-base md-text-base text-[14px]">Software Engineer</h4>
+          <h4 className="font-semibold uppercase lg:text-base md:text-base text-[14px]">Software Engineer</h4>
           <div className="flex gap-3 mt-2 justify-between">
             <h4 className={`${indieFlower.className} !font-semibold lg:text-base md:text-base text-[13px]`}>
               Freelancer

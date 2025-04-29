@@ -14,6 +14,7 @@ import {
   SiCanva,
   SiAdobephotoshop,
   SiAdobeillustrator,
+  SiGoogledrive,
 } from "react-icons/si";
 import { InfiniteSlider } from "../motion-primitives/infinite-slider";
 import { InView } from "../motion-primitives/in-view";
@@ -29,7 +30,7 @@ export default function Howedoit() {
         viewOptions={{ margin: "0px 0px -50px 0px" }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
-        <h4 className="text-center lg:text-4xl md:text-3xl text-2xl">Tech Stack</h4>
+        <h4 className="text-center lg:text-4xl md:text-3xl text-2xl">Tech We Used</h4>
         <InfiniteSlider
           speedOnHover={20}
           gap={30}
@@ -54,6 +55,7 @@ export default function Howedoit() {
           <SiCanva   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
           <SiAdobephotoshop   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
           <SiAdobeillustrator   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+          <SiGoogledrive className="text-inherit lg:size-[70] md:size-[60] size-[50]" />
         </InfiniteSlider>
       </InView>
     </div>

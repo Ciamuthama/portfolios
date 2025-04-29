@@ -77,14 +77,14 @@ export default function Services() {
                     <p className="font-base mb-1 text-center">{item.description}</p>
                     <div className="flex my-2 gap-2 items-center justify-center">
                     <Magnetic intensity={0.2}>
-                      <span className="flex gap-3 items-center text-[14px] bg-[#004030]/80 p-2 rounded-full text-[#e1c6b5] font-semibold shadow-md">
+                      <span className="flex gap-3 items-center text-[14px] text-center bg-[#004030]/80 p-2 rounded-full text-[#e1c6b5] font-semibold shadow-md">
                         <BsFillRocketTakeoffFill  className="text-[#e1c6b5] size-[18]" />
                         {item.delivery_time} Turn Around
                       </span>
                       </Magnetic>
                       <Magnetic intensity={0.2}>
 
-                      <span className="flex gap-3 items-center text-[14px] bg-[#004030]/80 p-2 rounded-full text-[#e1c6b5] font-semibold shadow-md">
+                      <span className="flex gap-3 items-center text-[14px] text-center bg-[#004030]/80 p-2 rounded-full text-[#e1c6b5] font-semibold shadow-md">
                         <GrTag  className="text-[#e1c6b5] size-[20] " />
                         {item.price}
                       </span>

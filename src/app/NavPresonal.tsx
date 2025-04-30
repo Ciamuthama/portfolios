@@ -9,10 +9,10 @@ export default function NavPresonal() {
   return (
     <div className="flex justify-between items-center shadow bottom-2 left-0 right-0 sticky w-[22rem]  py-3 px-2 mx-auto text-[#e1c6b5] bg-[#004030]/50 backdrop-blur-xl rounded-2xl">
       <Link
-        href="#/"
+        href="/"
         className="uppercase font-semibold bg-[#e1c6b5]  p-1 rounded-full relative w-8 h-8"
       >
-        <Image src="/profile-pic.png" fill alt="CM" />
+        <Image src="/profile-pic.png" fill alt="CM" className="rounded-full" />
       </Link>
       <ul className="flex gap-6">
         <li>

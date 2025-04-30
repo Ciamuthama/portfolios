@@ -14,6 +14,10 @@ import {
   SiCanva,
   SiAdobephotoshop,
   SiAdobeillustrator,
+  SiFirebase,
+  SiGoogledrive,
+  SiSupabase,
+  SiVercel,
 } from "react-icons/si";
 import { InfiniteSlider } from "../motion-primitives/infinite-slider";
 import { InView } from "../motion-primitives/in-view";
@@ -39,23 +43,27 @@ export default function Skills() {
           speed={50}
         >
           <SiTypescript  className="text-inherit lg:size-[70] md:size-[60] size-[50]" />
-          <SiJavascript   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <FaReact   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <SiSvelte   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <TbBrandNextjs   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <FaNodeJs   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <TbBrandKotlin   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <ImAndroid   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <FaPython   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <SiRubyonrails   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <SiMysql   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <BiLogoPostgresql   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <SiMongodb   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <FaBootstrap   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <SiTailwindcss   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <SiCanva   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <SiAdobephotoshop   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
-          <SiAdobeillustrator   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <SiJavascript   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <FaReact   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <SiSvelte   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <TbBrandNextjs   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <FaNodeJs   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <TbBrandKotlin   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <ImAndroid   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <FaPython   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <SiRubyonrails   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <SiMysql   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <BiLogoPostgresql   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <SiMongodb   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <SiFirebase className="text-inherit lg:size-[70] md:size-[60] size-[50]"/>
+                    <SiSupabase className="text-inherit lg:size-[70] md:size-[60] size-[50]"/>
+                    <FaBootstrap   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <SiTailwindcss   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <SiCanva   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <SiAdobephotoshop   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <SiAdobeillustrator   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+                    <SiGoogledrive className="text-inherit lg:size-[70] md:size-[60] size-[50]" />
+                    <SiVercel className="text-inherit lg:size-[70] md:size-[60] size-[50]"/>
         </InfiniteSlider>
         <ProgressiveBlur
         className='pointer-events-none absolute top-0 -left-10 h-full w-[200px]'

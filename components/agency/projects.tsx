@@ -175,6 +175,74 @@ export default function Projects() {
               </MorphingDialogContainer>
             </MorphingDialog>
           </div>
+                <div className="mt-5 lg:mx-0 mx-5 ">
+                  <MorphingDialog
+                    transition={{
+                      type: "spring",
+                      bounce: 0.05,
+                      duration: 0.25,
+                    }}
+                  >
+                    <MorphingDialogTrigger
+                      style={{
+                        borderRadius: "12px",
+                      }}
+                      className="flex flex-col overflow-hidden shadow"
+                    >
+                      <MorphingDialogImage
+                        src="/bonkelinks.png"
+                        alt=""
+                        className="h-66 w-[25rem] object-cover"
+                      />
+                    </MorphingDialogTrigger>
+                    <MorphingDialogContainer>
+                      <MorphingDialogContent
+                        style={{
+                          borderRadius: "10px",
+                        }}
+                        className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border-[#004030] bg-[#e1c6b5] sm:w-[500px]"
+                      >
+                        <MorphingDialogImage
+                          src="/bonkelinks.png"
+                          alt="."
+                          className="h-full w-full object-cover"
+                        />
+                        <div className="p-6">
+                          <MorphingDialogTitle className="text-xl text-[#004030] ">
+                            Bonkelinks Internet Solutions
+                          </MorphingDialogTitle>
+                          <MorphingDialogSubtitle
+                            className={`${indieFlower.className} text-[#004030] !font-light`}
+                          >
+                            A Nextjs Project for a client that is still in development stage and will be live in due time 
+                          </MorphingDialogSubtitle>
+                          <MorphingDialogDescription
+                            disableLayoutAnimation
+                            variants={{
+                              initial: { opacity: 0, scale: 0.8, y: 100 },
+                              animate: { opacity: 1, scale: 1, y: 0 },
+                              exit: { opacity: 0, scale: 0.8, y: 100 },
+                            }}
+                          >
+                            <p
+                              className={`${indieFlower.className} text-[#004030] !font-light`}
+                            >
+                              Tech Stack: NextJs, TailwindCss, GoogleMap API, WhatsApp API
+                            </p>
+                            <Link
+                              target="_blank"
+                              className={`${indieFlower.className} text-[#004030] !font-light !text-[20px] underline flex items-center`}
+                              href="https://bonkeliks.vercel.app/"
+                            >
+                              Demo <Globe size={16} className="ml-1" />
+                            </Link>
+                          </MorphingDialogDescription>
+                        </div>
+                        <MorphingDialogClose className="text-[#e1c6b5]" />
+                      </MorphingDialogContent>
+                    </MorphingDialogContainer>
+                  </MorphingDialog>
+                </div>
 
           <div className="mt-5 lg:mx-0 mx-5 ">
             <MorphingDialog
@@ -252,81 +320,6 @@ export default function Projects() {
             </MorphingDialog>
           </div>
 
-          <div className="mt-5 lg:mx-0 mx-5 ">
-            <MorphingDialog
-              transition={{
-                type: "spring",
-                bounce: 0.05,
-                duration: 0.25,
-              }}
-            >
-              <MorphingDialogTrigger
-                style={{
-                  borderRadius: "12px",
-                }}
-                className="flex flex-col overflow-hidden shadow"
-              >
-                <MorphingDialogImage
-                  src="/crm.png"
-                  alt=""
-                  className="h-66 w-[25rem] object-cover"
-                />
-              </MorphingDialogTrigger>
-              <MorphingDialogContainer>
-                <MorphingDialogContent
-                  style={{
-                    borderRadius: "10px",
-                  }}
-                  className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border-[#004030] bg-[#e1c6b5] sm:w-[500px]"
-                >
-                  <MorphingDialogImage
-                    src="/crm.png"
-                    alt="."
-                    className="h-full w-full object-cover"
-                  />
-                  <div className="p-6">
-                    <MorphingDialogTitle className="text-xl text-[#004030] ">
-                      CRM System
-                    </MorphingDialogTitle>
-                    <MorphingDialogSubtitle
-                      className={`${indieFlower.className} text-[#004030] !font-light`}
-                    >
-                      A Full Stack CRM system for a client to manage members in Clusters offering an easy way to group members in clusters: Hosted locally on the clients local server
-                    </MorphingDialogSubtitle>
-                    <MorphingDialogDescription
-                      disableLayoutAnimation
-                      variants={{
-                        initial: { opacity: 0, scale: 0.8, y: 100 },
-                        animate: { opacity: 1, scale: 1, y: 0 },
-                        exit: { opacity: 0, scale: 0.8, y: 100 },
-                      }}
-                    >
-                      <p
-                        className={`${indieFlower.className} text-[#004030] !font-light`}
-                      >
-                        Tech Stack: ReactJs, MongoDB, Tailwind, NodeJs, ExpressJs, Multer
-                      </p>
-                      <Link
-                        target="_blank"
-                        className={`${indieFlower.className} text-[#004030] !font-light !text-[20px] underline flex items-center`}
-                        href="https://clustermgt.vercel.app/"
-                      >
-                        Demo <Globe size={16} className="ml-1" />
-                      </Link>
-                      <Link
-                        target="_blank"
-                        className={`${indieFlower.className} text-[#004030] !font-light !text-[20px] underline flex items-center`}
-                        href="https://github.com/Ciamuthama/clustermgt"
-                      >
-                        Code Preview <GitBranch size={16} className="ml-1" />
-                      </Link>
-                    </MorphingDialogDescription>
-                  </div>
-                  <MorphingDialogClose className="text-[#e1c6b5]" />
-                </MorphingDialogContent>
-              </MorphingDialogContainer>
-            </MorphingDialog>
-          </div>
         </div>
       </InView>
     </div>

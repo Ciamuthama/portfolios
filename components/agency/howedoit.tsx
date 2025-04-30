@@ -15,6 +15,9 @@ import {
   SiAdobephotoshop,
   SiAdobeillustrator,
   SiGoogledrive,
+  SiVercel,
+  SiFirebase,
+  SiSupabase,
 } from "react-icons/si";
 import { InfiniteSlider } from "../motion-primitives/infinite-slider";
 import { InView } from "../motion-primitives/in-view";
@@ -50,12 +53,15 @@ export default function Howedoit() {
           <SiMysql   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
           <BiLogoPostgresql   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
           <SiMongodb   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
+          <SiFirebase className="text-inherit lg:size-[70] md:size-[60] size-[50]"/>
+          <SiSupabase className="text-inherit lg:size-[70] md:size-[60] size-[50]"/>
           <FaBootstrap   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
           <SiTailwindcss   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
           <SiCanva   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
           <SiAdobephotoshop   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
           <SiAdobeillustrator   className="text-inherit lg:size-[70] md:size-[60] size-[50]"  />
           <SiGoogledrive className="text-inherit lg:size-[70] md:size-[60] size-[50]" />
+          <SiVercel className="text-inherit lg:size-[70] md:size-[60] size-[50]"/>
         </InfiniteSlider>
       </InView>
     </div>

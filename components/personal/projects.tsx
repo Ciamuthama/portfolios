@@ -56,13 +56,13 @@ export default function Projects() {
                 />
                 <div className="flex grow flex-row items-end justify-between px-3 py-2">
                   <div>
-                    <MorphingDialogTitle className="text-[#e1c6b5] text-left">
+                    <MorphingDialogTitle className="text-[#dfe8ea] text-left">
                       Senko Mobile App
                     </MorphingDialogTitle>
                   </div>
                   <button
                     type="button"
-                    className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center rounded-lg border-[#e1c6b5]  text-[#e1c6b5] transition-color  focus-visible:ring-2 active:scale-[0.98]"
+                    className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center rounded-lg border-[#dfe8ea]  text-[#dfe8ea] transition-color  focus-visible:ring-2 active:scale-[0.98]"
                     aria-label="Open dialog"
                   >
                     <PlusIcon size={12} />
@@ -83,11 +83,11 @@ export default function Projects() {
                     className="h-66 w-full object-cover"
                   />
                   <div className="p-6">
-                    <MorphingDialogTitle className="text-xl text-[#e1c6b5] ">
+                    <MorphingDialogTitle className="text-xl text-[#dfe8ea] ">
                       Senko Mobile App
                     </MorphingDialogTitle>
                     <MorphingDialogSubtitle
-                       className={`${indieFlower.className} text-[#e1c6b5] !font-light`}
+                       className={`${indieFlower.className} text-[#dfe8ea] !font-light`}
                     >
                       A react native application that aim to help you relive
                       epic moments with fast image.
@@ -101,27 +101,27 @@ export default function Projects() {
                       }}
                     >
                       <p
-                         className={`${indieFlower.className} text-[#e1c6b5] !font-light`}
+                         className={`${indieFlower.className} text-[#dfe8ea] !font-light`}
                       >
                         Tech Stack: React Native, Expo, NativeWind
                       </p>
                       <Link
                        target="_blank"
-                       className={`${indieFlower.className} text-[#e1c6b5] !font-light !text-[20px] underline flex items-center`}
+                       className={`${indieFlower.className} text-[#dfe8ea] !font-light !text-[20px] underline flex items-center`}
                         href="https://github.com/Ciamuthama/Senko/releases/download/v1.0.2/Senko.apk"
                       >
                         Download <CloudDownload size={16} className="ml-1" />
                       </Link>
                       <Link
                        target="_blank"
-                       className={`${indieFlower.className} text-[#e1c6b5] !font-light !text-[20px] underline flex items-center`}
+                       className={`${indieFlower.className} text-[#dfe8ea] !font-light !text-[20px] underline flex items-center`}
                         href="https://github.com/Ciamuthama/Senko/"
                       >
                         Code <GitBranch size={16} className="ml-1" />
                       </Link>
                     </MorphingDialogDescription>
                   </div>
-                  <MorphingDialogClose className="text-[#e1c6b5]" />
+                  <MorphingDialogClose className="text-[#dfe8ea]" />
                 </MorphingDialogContent>
               </MorphingDialogContainer>
             </MorphingDialog>
@@ -147,13 +147,13 @@ export default function Projects() {
                 />
                 <div className="flex grow flex-row items-end justify-between px-3 py-2">
                   <div>
-                    <MorphingDialogTitle className="text-[#e1c6b5] text-left">
+                    <MorphingDialogTitle className="text-[#dfe8ea] text-left">
                       Json Keeper CLI
                     </MorphingDialogTitle>
                   </div>
                   <button
                     type="button"
-                    className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center rounded-lg border-[#e1c6b5]  text-[#e1c6b5] transition-color  focus-visible:ring-2 active:scale-[0.98]"
+                    className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center rounded-lg border-[#dfe8ea]  text-[#dfe8ea] transition-color  focus-visible:ring-2 active:scale-[0.98]"
                     aria-label="Open dialog"
                   >
                     <PlusIcon size={12} />
@@ -174,11 +174,11 @@ export default function Projects() {
                     className="h-66 w-full object-cover"
                   />
                   <div className="p-6">
-                    <MorphingDialogTitle className="text-xl text-[#e1c6b5] ">
+                    <MorphingDialogTitle className="text-xl text-[#dfe8ea] ">
                       Json Keeper CLI
                     </MorphingDialogTitle>
                     <MorphingDialogSubtitle
-                       className={`${indieFlower.className} text-[#e1c6b5] !font-light`}
+                       className={`${indieFlower.className} text-[#dfe8ea] !font-light`}
                     >
                       Create and store Json Data with a simple CLI tool built
                       with Ruby on Rail no installation required, just have Ruby
@@ -193,27 +193,27 @@ export default function Projects() {
                       }}
                     >
                       <p
-                         className={`${indieFlower.className} text-[#e1c6b5] !font-light`}
+                         className={`${indieFlower.className} text-[#dfe8ea] !font-light`}
                       >
                         Tech Stack: Ruby on Rails
                       </p>
                       <Link
                        target="_blank"
-                       className={`${indieFlower.className} text-[#e1c6b5] !font-light !text-[20px] underline flex items-center`}
+                       className={`${indieFlower.className} text-[#dfe8ea] !font-light !text-[20px] underline flex items-center`}
                         href="https://github.com/user-attachments/assets/52bb51b2-17f4-4f05-a5d0-e39c235c7c84"
                       >
                         Example <Video  size={16} className="ml-1" />
                       </Link>
                       <Link
                       target="_blank"
-                      className={`${indieFlower.className} text-[#e1c6b5] !font-light !text-[20px] underline flex items-center`}
+                      className={`${indieFlower.className} text-[#dfe8ea] !font-light !text-[20px] underline flex items-center`}
                         href="https://github.com/Ciamuthama/jk/"
                       >
                         Code <GitBranch size={16} className="ml-1" />
                       </Link>
                     </MorphingDialogDescription>
                   </div>
-                  <MorphingDialogClose className="text-[#e1c6b5]" />
+                  <MorphingDialogClose className="text-[#dfe8ea]" />
                 </MorphingDialogContent>
               </MorphingDialogContainer>
             </MorphingDialog>
@@ -239,13 +239,13 @@ export default function Projects() {
                 />
                 <div className="flex grow flex-row items-end justify-between px-3 py-2">
                   <div>
-                    <MorphingDialogTitle className="text-[#e1c6b5] text-left">
+                    <MorphingDialogTitle className="text-[#dfe8ea] text-left">
                       SvelteKit Movie
                     </MorphingDialogTitle>
                   </div>
                   <button
                     type="button"
-                    className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center rounded-lg border-[#e1c6b5]  text-[#e1c6b5] transition-color  focus-visible:ring-2 active:scale-[0.98]"
+                    className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center rounded-lg border-[#dfe8ea]  text-[#dfe8ea] transition-color  focus-visible:ring-2 active:scale-[0.98]"
                     aria-label="Open dialog"
                   >
                     <PlusIcon size={12} />
@@ -265,11 +265,11 @@ export default function Projects() {
                     className="h-66 "
                   />
                   <div className="p-6">
-                    <MorphingDialogTitle className="text-xl text-[#e1c6b5] ">
+                    <MorphingDialogTitle className="text-xl text-[#dfe8ea] ">
                       SvelteKit Movie
                     </MorphingDialogTitle>
                     <MorphingDialogSubtitle
-                      className={`${indieFlower.className} text-[#e1c6b5] !font-light`}
+                      className={`${indieFlower.className} text-[#dfe8ea] !font-light`}
                     >
                       A movie site developed using SvelteKit,Tailwind CSS and
                       MovieDB API.
@@ -283,27 +283,27 @@ export default function Projects() {
                       }}
                     >
                       <p
-                        className={`${indieFlower.className} text-[#e1c6b5] !font-light`}
+                        className={`${indieFlower.className} text-[#dfe8ea] !font-light`}
                       >
                         Tech Stack: SvelteKit, Tailwind CSS, MovieDB API
                       </p>
                       <Link
                        target="_blank"
-                        className={`${indieFlower.className} text-[#e1c6b5] !font-light !text-[20px] underline flex items-center`}
+                        className={`${indieFlower.className} text-[#dfe8ea] !font-light !text-[20px] underline flex items-center`}
                         href="https://sveltemovie-umber.vercel.app"
                       >
                         Visit <Globe size={16} className="ml-1" />
                       </Link>
                       <Link
                        target="_blank"
-                        className={`${indieFlower.className} text-[#e1c6b5] !font-light !text-[20px] underline flex items-center`}
+                        className={`${indieFlower.className} text-[#dfe8ea] !font-light !text-[20px] underline flex items-center`}
                         href="https://github.com/Ciamuthama/movie-app"
                       >
                         Code <GitBranch size={16} className="ml-1" />
                       </Link>
                     </MorphingDialogDescription>
                   </div>
-                  <MorphingDialogClose className="text-[#e1c6b5]" />
+                  <MorphingDialogClose className="text-[#dfe8ea]" />
                 </MorphingDialogContent>
               </MorphingDialogContainer>
             </MorphingDialog>

@@ -60,7 +60,7 @@ export default function Projects() {
                   style={{
                     borderRadius: "10px",
                   }}
-                  className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border-[#004030] bg-[#e1c6b5] sm:w-[500px]"
+                  className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border-[#004030] bg-[#dfe8ea] sm:w-[500px]"
                 >
                   <MorphingDialogImage
                     src="/erp.png"
@@ -101,7 +101,7 @@ export default function Projects() {
                       
                     </MorphingDialogDescription>
                   </div>
-                  <MorphingDialogClose className="text-[#e1c6b5]" />
+                  <MorphingDialogClose className="text-[#dfe8ea]" />
                 </MorphingDialogContent>
               </MorphingDialogContainer>
             </MorphingDialog>
@@ -132,7 +132,7 @@ export default function Projects() {
                   style={{
                     borderRadius: "10px",
                   }}
-                  className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border-[#004030] bg-[#e1c6b5] sm:w-[500px]"
+                  className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border-[#004030] bg-[#dfe8ea] sm:w-[500px]"
                 >
                   <MorphingDialogImage
                     src="/menucha.png"
@@ -170,7 +170,7 @@ export default function Projects() {
                       </Link>
                     </MorphingDialogDescription>
                   </div>
-                  <MorphingDialogClose className="text-[#e1c6b5]" />
+                  <MorphingDialogClose className="text-[#dfe8ea]" />
                 </MorphingDialogContent>
               </MorphingDialogContainer>
             </MorphingDialog>
@@ -200,7 +200,7 @@ export default function Projects() {
                         style={{
                           borderRadius: "10px",
                         }}
-                        className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border-[#004030] bg-[#e1c6b5] sm:w-[500px]"
+                        className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border-[#004030] bg-[#dfe8ea] sm:w-[500px]"
                       >
                         <MorphingDialogImage
                           src="/bonkelinks.png"
@@ -238,7 +238,7 @@ export default function Projects() {
                             </Link>
                           </MorphingDialogDescription>
                         </div>
-                        <MorphingDialogClose className="text-[#e1c6b5]" />
+                        <MorphingDialogClose className="text-[#dfe8ea]" />
                       </MorphingDialogContent>
                     </MorphingDialogContainer>
                   </MorphingDialog>
@@ -269,7 +269,7 @@ export default function Projects() {
                   style={{
                     borderRadius: "10px",
                   }}
-                  className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border-[#004030] bg-[#e1c6b5] sm:w-[500px]"
+                  className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border-[#004030] bg-[#dfe8ea] sm:w-[500px]"
                 >
                   <MorphingDialogImage
                     src="/crm.png"
@@ -314,7 +314,7 @@ export default function Projects() {
                       </Link>
                     </MorphingDialogDescription>
                   </div>
-                  <MorphingDialogClose className="text-[#e1c6b5]" />
+                  <MorphingDialogClose className="text-[#dfe8ea]" />
                 </MorphingDialogContent>
               </MorphingDialogContainer>
             </MorphingDialog>

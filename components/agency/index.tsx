@@ -9,7 +9,7 @@ import Footer from './footer'
 
 export default function Personal() {
   return (
-    <div className='pt-5 text-[#e1c6b5] font-sans' id='/'>
+    <div className='pt-5 text-[#dfe8ea] font-sans' id='/'>
       <AnimatedGroup className='mt-20' variants={{
         container: {
           visible: {

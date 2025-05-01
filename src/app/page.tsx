@@ -6,7 +6,7 @@ import { TextRoll } from "../../components/motion-primitives/text-roll";
 export default function Home() {
   return (
     <div className="grid lg:grid-cols-2 max-sm:grid-rows-2  items-center justify-items-center h-screen font-[family-name:var(--font-geist-sans)]">
-      <div className="bg-[#e1c6b5] lg:min-h-screen w-full h-full flex items-center justify-center relative">
+      <div className="bg-[#dfe8ea] lg:min-h-screen w-full h-full flex items-center justify-center relative">
         <Link className=" text-[#004030]" href="/personal">
           <div className="relative w-20 h-20 mx-auto">
             <Image
@@ -73,7 +73,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[#004030] lg:min-h-screen w-full h-full flex items-center justify-center relative">
-        <Link className="text-xl text-[#e1c6b5]" href="/agency">
+        <Link className="text-xl text-[#dfe8ea]" href="/agency">
           <div className="relative w-20 h-20 mx-auto">
             <Image
               src="/ciado.png"
@@ -118,7 +118,7 @@ export default function Home() {
             </TextLoop>
           </div>
         </Link>
-        <div className="absolute top-2 left-2 text-[#e1c6b5] font-medium">
+        <div className="absolute top-2 left-2 text-[#dfe8ea] font-medium">
           <TextRoll
             variants={{
               enter: {
@@ -130,7 +130,7 @@ export default function Home() {
                 animate: { rotateX: 0, filter: "blur(0px)" },
               },
             }}
-            className="text-[#e1c6b5] !font-normal"
+            className="text-[#dfe8ea] !font-normal"
           >
             Agency
           </TextRoll>

@@ -55,7 +55,7 @@ export default function Services() {
                     <MorphingDialogTitle className="uppercase lg:text-base md:text-base text-[12px]">
                       <span className="flex gap-3 items-center ">
                         {item.service}
-                        <TbArrowRightToArc className="text-[#e1c6b5] size-[20] -rotate-45" />
+                        <TbArrowRightToArc className="text-[#dfe8ea] size-[20] -rotate-45" />
                       </span>
                     </MorphingDialogTitle>
                   </div>
@@ -66,7 +66,7 @@ export default function Services() {
                   style={{
                     borderRadius: "10px",
                   }}
-                  className=" select-none pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border-[#004030] bg-[#e1c6b5] sm:w-[500px]"
+                  className=" select-none pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border-[#004030] bg-[#dfe8ea] sm:w-[500px]"
                 >
                   <MorphingDialogTitle className="uppercase lg:text-lg md:text-base text-[14px] text-[#004030] text-center px-6 pt-6 mx-auto font-semibold">
                     <span className="flex gap-2 items-center ">
@@ -77,15 +77,15 @@ export default function Services() {
                     <p className="font-base mb-1 text-center">{item.description}</p>
                     <div className="flex my-2 gap-2 items-center justify-center">
                     <Magnetic intensity={0.2}>
-                      <span className="flex gap-3 items-center text-[14px] text-center bg-[#004030]/80 p-2 rounded-full text-[#e1c6b5] font-semibold shadow-md">
-                        <BsFillRocketTakeoffFill  className="text-[#e1c6b5] size-[18]" />
+                      <span className="flex gap-3 items-center text-[14px] text-center bg-[#004030]/80 p-2 rounded-full text-[#dfe8ea] font-semibold shadow-md">
+                        <BsFillRocketTakeoffFill  className="text-[#dfe8ea] size-[18]" />
                         {item.delivery_time} Turn Around
                       </span>
                       </Magnetic>
                       <Magnetic intensity={0.2}>
 
-                      <span className="flex gap-3 items-center text-[14px] text-center bg-[#004030]/80 p-2 rounded-full text-[#e1c6b5] font-semibold shadow-md">
-                        <GrTag  className="text-[#e1c6b5] size-[20] " />
+                      <span className="flex gap-3 items-center text-[14px] text-center bg-[#004030]/80 p-2 rounded-full text-[#dfe8ea] font-semibold shadow-md">
+                        <GrTag  className="text-[#dfe8ea] size-[20] " />
                         {item.price}
                       </span>
                       </Magnetic>
@@ -104,7 +104,7 @@ export default function Services() {
                     </div>
                     <div className="flex justify-center mt-4">
                       <Magnetic intensity={0.2}>
-                      <Link href="https://calendar.app.google/YgGBkrT7f3x8hXvy7" target="_blank" className="flex gap-3 items-center px-5 py-3 bg-[#004030]/80 text-[#e1c6b5] text-[14px] rounded-full shadow-md font-semibold"> Book A Meeting <BsCalendar3RangeFill className="text-[#e1c6b5] size-[15] "/></Link>
+                      <Link href="https://calendar.app.google/YgGBkrT7f3x8hXvy7" target="_blank" className="flex gap-3 items-center px-5 py-3 bg-[#004030]/80 text-[#dfe8ea] text-[14px] rounded-full shadow-md font-semibold"> Book A Meeting <BsCalendar3RangeFill className="text-[#dfe8ea] size-[15] "/></Link>
                       </Magnetic>
                     </div>
                   </div>

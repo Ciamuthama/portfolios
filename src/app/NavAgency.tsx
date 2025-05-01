@@ -16,22 +16,22 @@ export default function NavAgency() {
       </Link>
       <ul className="flex gap-6">
         <li>
-          <Link href="mailto:agencyciado@gmail.com"><SiGmail className="size-[30] text-[#004030]" /></Link>
+          <Link target="_blank" href="mailto:agencyciado@gmail.com"><SiGmail className="size-[30] text-[#004030]" /></Link>
         </li>
       <li>
           <Link href="tel:+254703911863"><FaRegAddressBook   className="size-[28] text-[#004030]" /></Link>
         </li>
         <li>
-          <Link href="https://github.com/ciamuthama"><BsCalendar3Week    className="size-[28] text-[#004030]" /></Link>
+          <Link target="_blank" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ15gYXqPqAbEXpsJSzFtgqP4aROaiSskB1EhF5OijTuqWE3dIY8p1mMDfrI_RDxcLnp2nkqDng_"><BsCalendar3Week    className="size-[28] text-[#004030]" /></Link>
         </li>
         {/* <li>
          <Link href="https://www.tiktok.com/@ciado.agency"> <FaTiktok  className="size-[28] text-[#004030]" /></Link>
         </li> */}
         <li>
-        <Link href="https://x.com/AgencyCiado">  <FaSquareXTwitter  className="size-[30] text-[#004030]" /></Link>
+        <Link target="_blank" href="https://x.com/AgencyCiado">  <FaSquareXTwitter  className="size-[30] text-[#004030]" /></Link>
         </li>
         <li>
-          <Link href="https://www.instagram.com/ciadoagency/"><FaSquareInstagram  className="size-[30] text-[#004030] " /></Link>
+          <Link target="_blank" href="https://www.instagram.com/ciadoagency/"><FaSquareInstagram  className="size-[30] text-[#004030] " /></Link>
         </li>
       </ul>
     </div>

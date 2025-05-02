@@ -9,8 +9,8 @@ import Footer from './footer'
 
 export default function Personal() {
   return (
-    <div className='pt-5 text-[#dfe8ea] font-sans'>
-      <AnimatedGroup className='mt-20' variants={{
+    <div className='pt-5 text-[#dfe8ea] font-sans h-full w-full overflow-x-hidden'>
+      <AnimatedGroup className='mt-20 w-full' variants={{
         container: {
           visible: {
             transition: {

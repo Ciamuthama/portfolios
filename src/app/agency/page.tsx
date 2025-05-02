@@ -5,7 +5,7 @@ import NavAgency from '../NavAgency'
 
 
 const Page: NextPage = ({}) => {
-  return <div className='bg-[#004030]' id='/agency'>
+  return <div className='bg-[#004030] h-full' id='/agency'>
     <Agency/>
     <NavAgency/>
   </div>

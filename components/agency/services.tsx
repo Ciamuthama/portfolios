@@ -23,13 +23,8 @@ import { Magnetic } from "../motion-primitives/magnetic";
 export default function Services() {
   return (
     <div className="lg:mt-[15rem] mt-[7rem] select-none">
-      <InView
-        variants={{
-          hidden: { opacity: 0, y: 100, filter: "blur(4px)" },
-          visible: { opacity: 1, y: 0, filter: "blur(0px)" },
-        }}
-        viewOptions={{ margin: "0px 0px -50px 0px" }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
+      <div
+        
       >
         <h4 className="text-center lg:text-4xl md:text-3xl text-2xl">
           Our Services
@@ -113,7 +108,7 @@ export default function Services() {
             </MorphingDialog>
           ))}
         </div>
-      </InView>
+      </div>
     </div>
   );
 }

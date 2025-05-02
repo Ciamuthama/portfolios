@@ -31,26 +31,3 @@ body {
 li{
   list-style: symbols(🍥) !important;
 }
-
-.agency{
-  display: flex; 
-position: sticky; 
-right: 0; 
-left: 0; 
-bottom: 0.5rem; 
-padding-left: 0.5rem;
-padding-right: 0.5rem; 
-padding-top: 0.75rem;
-padding-bottom: 0.75rem; 
-justify-content: space-between; 
-align-items: center; 
-border-radius: 1rem; 
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
--webkit-backdrop-filter: blur(24px);
-backdrop-filter: blur(24px); 
-width: 22rem;
-color: #004030;
-background: #dfe8ea;
-margin-inline: auto;
-
-}

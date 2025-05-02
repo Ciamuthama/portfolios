@@ -7,7 +7,7 @@ import { BsCalendar3Week  } from "react-icons/bs";
 
 export default function NavAgency() {
   return (
-    <div className="flex justify-between items-center shadow bottom-2 left-0 right-0 sticky w-[22rem]  py-3 px-2 mx-auto text-[#004030] bg-[#dfe8ea]/70 backdrop-blur-xl rounded-2xl">
+    <div className="agency">
       <Link
         href="/"
         className="uppercase font-semibold bg-[#004030]  p-1 rounded-full relative w-8 h-8"

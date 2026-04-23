@@ -232,7 +232,7 @@ export default function Projects() {
                             <Link
                               target="_blank"
                               className={`${indieFlower.className} text-[#004030] !font-light !text-[20px] underline flex items-center`}
-                              href="https://bonkelinks.vercel.app/"
+                              href="http://bonkelinksfiber.co.ke/"
                             >
                               Demo <Globe size={16} className="ml-1" />
                             </Link>
